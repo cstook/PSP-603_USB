@@ -1,4 +1,4 @@
-update=2/19/2016 8:51:11 PM
+update=2/20/2016 2:24:15 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -43,3 +43,4 @@ LibName11=Taiyo Yuden/Taiyo_Yuden_Library
 LibName12=Panasonic/Panasonic_ERJ6EN_Library
 LibName13=AVX/AVX_Library
 LibName14=TE Connectivity/TE_Connectivity_Library
+LibName15=TI/TI_Library

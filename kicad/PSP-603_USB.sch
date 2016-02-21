@@ -13,6 +13,7 @@ LIBS:Taiyo_Yuden_Library
 LIBS:Panasonic_ERJ6EN_Library
 LIBS:AVX_Library
 LIBS:TE_Connectivity_Library
+LIBS:TI_Library
 LIBS:PSP-603_USB-cache
 EELAYER 25 0
 EELAYER END
@@ -257,9 +258,9 @@ Wire Wire Line
 Wire Wire Line
 	6550 5850 6600 5850
 Wire Wire Line
-	6550 6200 6850 6200
+	6850 6200 6550 6200
 Wire Wire Line
-	6850 6200 6850 5650
+	6850 5650 6850 6200
 Wire Wire Line
 	6850 5650 6200 5650
 Wire Wire Line
@@ -433,12 +434,10 @@ $EndComp
 Wire Wire Line
 	2500 5250 2500 4950
 Wire Wire Line
-	8350 2900 9850 2900
-Wire Wire Line
-	8350 3000 9850 3000
-Text Label 9350 2900 0    60   ~ 0
+	8350 3000 10100 3000
+Text Label 9700 2900 0    60   ~ 0
 UART_TX
-Text Label 9350 3000 0    60   ~ 0
+Text Label 9700 3000 0    60   ~ 0
 UART_RX
 $Comp
 L ACML-0402-102-T L1
@@ -1000,15 +999,15 @@ $EndComp
 Wire Wire Line
 	9350 3150 9350 3100
 Wire Wire Line
-	9350 3100 9850 3100
+	9350 3100 10100 3100
 Wire Wire Line
-	2100 1150 9150 1150
+	2100 1150 9750 1150
 Wire Wire Line
-	9150 1150 9150 2800
+	9750 1150 9750 2800
 Wire Wire Line
-	9150 2800 9850 2800
+	9750 2800 10100 2800
 Connection ~ 2100 2050
-Text Label 9350 2800 0    60   ~ 0
+Text Label 9800 2800 0    60   ~ 0
 VBUS
 Connection ~ 2500 4950
 Text Label 2850 4950 2    60   ~ 0
@@ -1217,20 +1216,104 @@ Connection ~ 6850 5850
 $Comp
 L 826947-4 J2
 U 1 1 56C9F91B
-P 9950 2950
-F 0 "J2" H 10000 2700 60  0000 C CNN
-F 1 "826947-4" H 10000 2600 60  0000 C CNN
-F 2 "TE_Connectivity_Footprints:826947-4" H 10000 1600 60  0001 C CNN
-F 3 "C:/Users/Chris/VendorData/TE Connectivity/ENG_CD_826629_AA_baseFilename.pdf" H 9950 1500 60  0001 C CNN
-F 4 "TE Connectivity" H 10050 2400 60  0001 C CNN "mfg"
-F 5 "826947-4" H 10000 2300 60  0001 C CNN "mfg part number"
-F 6 "0.1\"" H 10000 2200 60  0001 C CNN "Pitch"
-F 7 "0.264\"" H 10000 2100 60  0001 C CNN "Contact Mating Length"
-F 8 "Solder" H 10000 2000 60  0001 C CNN "Termination"
-F 9 "tin" H 10000 1900 60  0001 C CNN "Finish"
-F 10 "green" H 10000 1800 60  0001 C CNN "Color"
-F 11 "Square" H 10000 1700 60  0001 C CNN "Pin Shape"
-	1    9950 2950
+P 10200 2950
+F 0 "J2" H 10250 2700 60  0000 C CNN
+F 1 "826947-4" H 10250 2600 60  0000 C CNN
+F 2 "TE_Connectivity_Footprints:826947-4" H 10250 1600 60  0001 C CNN
+F 3 "C:/Users/Chris/VendorData/TE Connectivity/ENG_CD_826629_AA_baseFilename.pdf" H 10200 1500 60  0001 C CNN
+F 4 "TE Connectivity" H 10300 2400 60  0001 C CNN "mfg"
+F 5 "826947-4" H 10250 2300 60  0001 C CNN "mfg part number"
+F 6 "0.1\"" H 10250 2200 60  0001 C CNN "Pitch"
+F 7 "0.264\"" H 10250 2100 60  0001 C CNN "Contact Mating Length"
+F 8 "Solder" H 10250 2000 60  0001 C CNN "Termination"
+F 9 "tin" H 10250 1900 60  0001 C CNN "Finish"
+F 10 "green" H 10250 1800 60  0001 C CNN "Color"
+F 11 "Square" H 10250 1700 60  0001 C CNN "Pin Shape"
+	1    10200 2950
 	1    0    0    -1  
 $EndComp
+$Comp
+L SN74LV1T34DBVR U3
+U 1 1 56C8E4E0
+P 9300 2800
+F 0 "U3" H 9400 2900 60  0000 C CNN
+F 1 "SN74LV1T34DBVR" H 9300 3000 60  0000 C CNN
+F 2 "Standard_Footprints:TSOT-23-5" H 9300 2050 60  0001 C CNN
+F 3 "C:/Users/Chris/VendorData/TI/sn74lv1t34.pdf" H 9300 2150 60  0001 C CNN
+F 4 "TI" H 9250 2350 60  0001 C CNN "mfg"
+F 5 "SN74LV1T34DBVR" H 9250 2250 60  0001 C CNN "mfg part number"
+	1    9300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 56C8EB31
+P 3400 7600
+F 0 "#PWR025" H 3400 7350 50  0001 C CNN
+F 1 "GND" H 3400 7450 50  0000 C CNN
+F 2 "" H 3400 7600 50  0000 C CNN
+F 3 "" H 3400 7600 50  0000 C CNN
+	1    3400 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LV1T34DBVR U3
+U 2 1 56C8EFB3
+P 3400 7150
+F 0 "U3" H 3650 7050 60  0000 C CNN
+F 1 "SN74LV1T34DBVR" H 3950 6950 60  0000 C CNN
+F 2 "Standard_Footprints:TSOT-23-5" H 3400 6400 60  0001 C CNN
+F 3 "C:/Users/Chris/VendorData/TI/sn74lv1t34.pdf" H 3400 6500 60  0001 C CNN
+F 4 "TI" H 3350 6700 60  0001 C CNN "mfg"
+F 5 "SN74LV1T34DBVR" H 3350 6600 60  0001 C CNN "mfg part number"
+	2    3400 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 7600 3400 7500
+Wire Wire Line
+	3400 6800 3400 6700
+Wire Wire Line
+	2950 6700 3650 6700
+Text Label 3400 6700 0    60   ~ 0
+VBUS
+NoConn ~ 3200 7150
+Wire Wire Line
+	8350 2900 9000 2900
+Wire Wire Line
+	9000 2900 9000 2800
+Wire Wire Line
+	9000 2800 9100 2800
+Wire Wire Line
+	9500 2800 9600 2800
+Wire Wire Line
+	9600 2800 9600 2900
+Wire Wire Line
+	9600 2900 10100 2900
+$Comp
+L C1005X7R1H104K050BB C14
+U 1 1 56C91386
+P 2950 7150
+F 0 "C14" V 2750 6950 60  0000 C CNN
+F 1 "C1005X7R1H104K050BB" H 3050 6600 60  0001 C CNN
+F 2 "Standard_Footprints:C0402" H 3000 6900 60  0001 C CNN
+F 3 "" H 2950 7000 60  0000 C CNN
+F 4 "TDK" H 3000 6800 60  0001 C CNN "mfg"
+F 5 "C1005X7R1H104K050BB" H 3050 6700 60  0001 C CNN "mfg part number"
+F 6 "0.1uF" V 2850 7000 60  0000 C CNN "Capacatance"
+F 7 "50V" H 2950 6500 60  0001 C CNN "Voltage"
+F 8 "+/- 10%" H 2950 6400 60  0001 C CNN "Tolerance"
+F 9 "X7R" H 2950 6300 60  0001 C CNN "Dielectric"
+F 10 "-55C / +125C" H 2950 6200 60  0001 C CNN "Temp Range"
+	1    2950 7150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 6700 2950 7000
+Connection ~ 3400 6700
+Wire Wire Line
+	3400 7550 2950 7550
+Wire Wire Line
+	2950 7550 2950 7300
+Connection ~ 3400 7550
 $EndSCHEMATC
