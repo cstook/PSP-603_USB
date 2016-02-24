@@ -1,4 +1,4 @@
-update=2/20/2016 2:24:15 PM
+update=2/23/2016 8:07:24 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -31,16 +31,16 @@ LibDir=C:/Users/Chris/KiCadLibrary
 [eeschema/libraries]
 LibName1=power
 LibName2=FCI/FCI_Library
-LibName3=FTDI/FTDI
-LibName4=Abracon/Abracon_Library
-LibName5=Microchip/Microchip_Library
-LibName6=Littelfuse/Littelfuse_Library
-LibName7=Panasonic/Panasonic_ERJ3EK_Library
-LibName8=Dialight/Dialight_Library
-LibName9=TDK/TDK_Library
-LibName10=Kemet/Kemet_Library
-LibName11=Taiyo Yuden/Taiyo_Yuden_Library
-LibName12=Panasonic/Panasonic_ERJ6EN_Library
-LibName13=AVX/AVX_Library
-LibName14=TE Connectivity/TE_Connectivity_Library
-LibName15=TI/TI_Library
+LibName3=Abracon/Abracon_Library
+LibName4=Microchip/Microchip_Library
+LibName5=Littelfuse/Littelfuse_Library
+LibName6=Panasonic/Panasonic_ERJ3EK_Library
+LibName7=Dialight/Dialight_Library
+LibName8=TDK/TDK_Library
+LibName9=Kemet/Kemet_Library
+LibName10=Taiyo Yuden/Taiyo_Yuden_Library
+LibName11=Panasonic/Panasonic_ERJ6EN_Library
+LibName12=AVX/AVX_Library
+LibName13=TE Connectivity/TE_Connectivity_Library
+LibName14=TI/TI_Library
+LibName15=FTDI/FTDI_Library
