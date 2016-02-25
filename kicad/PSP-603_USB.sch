@@ -1,7 +1,6 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:FCI_Library
-LIBS:FTDI
 LIBS:Abracon_Library
 LIBS:Microchip_Library
 LIBS:Littelfuse_Library
@@ -14,6 +13,8 @@ LIBS:Panasonic_ERJ6EN_Library
 LIBS:AVX_Library
 LIBS:TE_Connectivity_Library
 LIBS:TI_Library
+LIBS:FTDI_Library
+LIBS:Keystone_Electronics_Library
 LIBS:PSP-603_USB-cache
 EELAYER 25 0
 EELAYER END
@@ -46,19 +47,6 @@ F 9 "+/- 30ppm" H 6800 5550 60  0001 C CNN "Frequency Tolerance"
 F 10 "12MHz" V 5850 6050 60  0000 C CNN "Frequency"
 	1    6250 6050
 	0    -1   -1   0   
-$EndComp
-$Comp
-L 10118194-0001LF J1
-U 1 1 56C7A421
-P 1250 3600
-F 0 "J1" H 1150 3900 60  0000 C CNN
-F 1 "10118194-0001LF" H 1500 4000 60  0000 C CNN
-F 2 "FCI_Footprints:10118194-0001LF" H 1400 2850 60  0001 C CNN
-F 3 "C:/Users/Chris/VendorData/FCI/10118194.pdf" H 1400 2950 60  0001 C CNN
-F 4 "FCI" H 1300 3150 60  0001 C CNN "mfg"
-F 5 "10118194-0001LF" H 1300 3050 60  0001 C CNN "mfg part number"
-	1    1250 3600
-	1    0    0    -1  
 $EndComp
 $Comp
 L FT232HL-Reel U2
@@ -1316,4 +1304,45 @@ Wire Wire Line
 Wire Wire Line
 	2950 7550 2950 7300
 Connection ~ 3400 7550
+$Comp
+L 9575 M1
+U 1 1 56CE57F1
+P 4750 7100
+F 0 "M1" V 4900 7100 60  0000 C CNN
+F 1 "9575" V 5000 7100 60  0000 C CNN
+F 2 "Keystone_Electronics_Footprints:9575" H 4800 6450 60  0001 C CNN
+F 3 "C:/Users/Chris/VendorData/Keystone Electronics/9575-9581 (self tapping screw).PDF" H 5350 6550 60  0001 C CNN
+F 4 "Keystone Electronics" H 4800 6750 60  0001 C CNN "mfg"
+F 5 "9575" H 4750 6650 60  0001 C CNN "mfg part number"
+	1    4750 7100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 9575 M2
+U 1 1 56CE5C33
+P 5050 7100
+F 0 "M2" V 5200 7100 60  0000 C CNN
+F 1 "9575" V 5300 7100 60  0000 C CNN
+F 2 "Keystone_Electronics_Footprints:9575" H 5100 6450 60  0001 C CNN
+F 3 "C:/Users/Chris/VendorData/Keystone Electronics/9575-9581 (self tapping screw).PDF" H 5650 6550 60  0001 C CNN
+F 4 "Keystone Electronics" H 5100 6750 60  0001 C CNN "mfg"
+F 5 "9575" H 5050 6650 60  0001 C CNN "mfg part number"
+	1    5050 7100
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4750 7250
+NoConn ~ 5050 7250
+$Comp
+L 10118193-0001LF J1
+U 1 1 56CE96CD
+P 1250 3600
+F 0 "J1" H 1150 3900 60  0000 C CNN
+F 1 "10118193-0001LF" H 1500 4000 60  0000 C CNN
+F 2 "FCI_Footprints:10118193-0001LF" H 1400 2850 60  0001 C CNN
+F 3 "C:/Users/Chris/VendorData/FCI/10118193.pdf" H 1400 2950 60  0001 C CNN
+F 4 "FCI" H 1300 3150 60  0001 C CNN "mfg"
+F 5 "10118193-0001LF" H 1300 3050 60  0001 C CNN "mfg part number"
+	1    1250 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

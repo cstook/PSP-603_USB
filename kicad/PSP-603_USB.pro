@@ -1,4 +1,4 @@
-update=2/23/2016 8:07:24 PM
+update=2/24/2016 7:35:49 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -44,3 +44,4 @@ LibName12=AVX/AVX_Library
 LibName13=TE Connectivity/TE_Connectivity_Library
 LibName14=TI/TI_Library
 LibName15=FTDI/FTDI_Library
+LibName16=Keystone Electronics/Keystone_Electronics_Library
