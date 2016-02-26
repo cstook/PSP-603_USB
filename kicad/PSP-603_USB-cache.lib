@@ -1,16 +1,16 @@
 EESchema-LIBRARY Version 2.3
 #encoding utf-8
 #
-# 04025A100JAT2A
+# 04025A180JAT2A
 #
-DEF ~04025A100JAT2A C 0 0 N N 1 F N
+DEF ~04025A180JAT2A C 0 0 N N 1 F N
 F0 "C" 0 -150 60 H V C CNN
-F1 "04025A100JAT2A" 100 -550 60 H I C CNN
+F1 "04025A180JAT2A" 100 -550 60 H I C CNN
 F2 "Standard_Footprints:C0402" 50 -250 60 H I C CNN
 F3 "C:/Users/Chris/VendorData/AVX/C0GNP0-Dielectric.pdf" 50 -1050 60 H I C CNN
 F4 "AVX" 50 -350 60 H I C CNN "mfg"
-F5 "04025A100JAT2A" 100 -450 60 H I C CNN "mfg part number"
-F6 "10pF" 0 150 60 H V C CNN "Capacatance"
+F5 "04025A180JAT2A" 100 -450 60 H I C CNN "mfg part number"
+F6 "18pF" 0 150 60 H V C CNN "Capacatance"
 F7 "50V" 0 -650 60 H I C CNN "Voltage"
 F8 "+/- 5%" 0 -750 60 H I C CNN "Tolerance"
 F9 "NPO" 0 -850 60 H I C CNN "Dielectric"
@@ -47,6 +47,21 @@ X ~ 8 0 -350 100 U 30 50 1 1 P
 X ~ 9 50 -350 100 U 30 50 1 1 P
 X ~ 10 100 -350 100 U 30 50 1 1 P
 X ~ 11 150 -350 100 U 30 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 5019
+#
+DEF 5019 J 0 40 Y Y 1 F N
+F0 "J" 0 -100 60 H V C CNN
+F1 "5019" 0 -200 60 H V C CNN
+F2 "Keystone_Electronics_Footprints:5090" 50 -500 60 H I C CNN
+F3 "" 0 -450 60 H V C CNN
+F4 "Keystone Electronics" 0 -300 60 H I C CNN "mfg"
+F5 "5019" 0 -400 60 H I C CNN "mfg part number"
+DRAW
+S 50 50 100 -50 0 1 0 N
+X ~ 1 -50 0 100 R 20 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -140,19 +155,19 @@ X ~ 1 -150 0 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ABM10AIG-12.000MHZ-4Z-T3
+# ABM8G-12.000MHZ-18-D2Y-T
 #
-DEF ~ABM10AIG-12.000MHZ-4Z-T3 X 0 40 Y Y 1 F N
+DEF ~ABM8G-12.000MHZ-18-D2Y-T X 0 40 Y Y 1 F N
 F0 "X" 350 100 60 H V C CNN
-F1 "ABM10AIG-12.000MHZ-4Z-T3" 950 -700 60 H I C CNN
-F2 "Abracon_Footprints:ABM10AIG" 900 -600 60 H I C CNN
-F3 "C:/Users/Chris/VendorData/Abracon/ABM10AIG.pdf" 1450 -800 60 H I C CNN
+F1 "ABM8G-12.000MHZ-18-D2Y-T" 950 -700 60 H I C CNN
+F2 "Abracon_Footprints:ABM8G" 900 -600 60 H I C CNN
+F3 "C:/Users/Chris/VendorData/Abracon/ABM8G.pdf" 1450 -800 60 H I C CNN
 F4 "Abracon" 450 200 60 H I C CNN "mfg"
-F5 "ABM10AIG-12.000MHZ-4Z-T3" 950 -100 60 H I C CNN "mfg number"
-F6 "10pF" 400 -200 60 H I C CNN "Load Capacatance"
+F5 "ABM8G-12.000MHZ-18-D2Y-T" 950 -100 60 H I C CNN "mfg number"
+F6 "18pF" 400 -200 60 H I C CNN "Load Capacatance"
 F7 "150 Ohm" 500 -300 60 H I C CNN "ESR"
-F8 "+/- 50ppm" 550 -400 60 H I C CNN "Frequency Stability"
-F9 "+/- 30ppm" 550 -500 60 H I C CNN "Frequency Tolerance"
+F8 "+/- 30ppm" 550 -400 60 H I C CNN "Frequency Stability"
+F9 "+/- 20ppm" 550 -500 60 H I C CNN "Frequency Tolerance"
 F10 "12MHz" 450 0 60 H V C CNN "Frequency"
 DRAW
 S -200 150 250 -200 0 1 0 N

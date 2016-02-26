@@ -31,24 +31,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ABM10AIG-12.000MHZ-4Z-T3 X1
-U 1 1 56C7A3C3
-P 6250 6050
-F 0 "X1" V 5950 6150 60  0000 C CNN
-F 1 "ABM10AIG-12.000MHZ-4Z-T3" H 7200 5350 60  0001 C CNN
-F 2 "Abracon_Footprints:ABM10AIG" H 7150 5450 60  0001 C CNN
-F 3 "C:/Users/Chris/VendorData/Abracon/ABM10AIG.pdf" H 7700 5250 60  0001 C CNN
-F 4 "Abracon" H 6700 6250 60  0001 C CNN "mfg"
-F 5 "ABM10AIG-12.000MHZ-4Z-T3" H 7200 5950 60  0001 C CNN "mfg number"
-F 6 "10pF" H 6650 5850 60  0001 C CNN "Load Capacatance"
-F 7 "150 Ohm" H 6750 5750 60  0001 C CNN "ESR"
-F 8 "+/- 50ppm" H 6800 5650 60  0001 C CNN "Frequency Stability"
-F 9 "+/- 30ppm" H 6800 5550 60  0001 C CNN "Frequency Tolerance"
-F 10 "12MHz" V 5850 6050 60  0000 C CNN "Frequency"
-	1    6250 6050
-	0    -1   -1   0   
-$EndComp
-$Comp
 L FT232HL-Reel U2
 U 1 1 56C7A4A6
 P 7500 3900
@@ -353,9 +335,11 @@ Wire Wire Line
 Wire Wire Line
 	1600 5350 1600 5450
 Wire Wire Line
-	2400 5250 2500 5250
+	2500 5250 2400 5250
 Wire Wire Line
-	2450 4950 2950 4950
+	2450 4950 2500 4950
+Wire Wire Line
+	2500 4650 2500 5250
 Wire Wire Line
 	1450 5250 1800 5250
 Wire Wire Line
@@ -419,8 +403,6 @@ F 9 "Thick Film" H 2250 4250 60  0001 C CNN "Composition"
 	1    2200 4950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2500 5250 2500 4950
 Wire Wire Line
 	8350 3000 10100 3000
 Text Label 9700 2900 0    60   ~ 0
@@ -998,7 +980,7 @@ Connection ~ 2100 2050
 Text Label 9800 2800 0    60   ~ 0
 VBUS
 Connection ~ 2500 4950
-Text Label 2850 4950 2    60   ~ 0
+Text Label 3200 4650 2    60   ~ 0
 VCCD
 NoConn ~ 1550 3700
 NoConn ~ 8350 3100
@@ -1122,24 +1104,6 @@ F 9 "Thick Film" H 9150 2900 60  0001 C CNN "Composition"
 $EndComp
 Text Label 7200 1500 2    60   ~ 0
 VCCD
-$Comp
-L 04025A100JAT2A C5
-U 1 1 56C9AE48
-P 5550 6050
-F 0 "C5" V 5500 5750 60  0000 C CNN
-F 1 "04025A100JAT2A" H 5650 5500 60  0001 C CNN
-F 2 "Standard_Footprints:C0402" H 5600 5800 60  0001 C CNN
-F 3 "C:/Users/Chris/VendorData/AVX/C0GNP0-Dielectric.pdf" H 5600 5000 60  0001 C CNN
-F 4 "AVX" H 5600 5700 60  0001 C CNN "mfg"
-F 5 "04025A100JAT2A" H 5650 5600 60  0001 C CNN "mfg part number"
-F 6 "10pF" V 5600 5800 60  0000 C CNN "Capacatance"
-F 7 "50V" H 5550 5400 60  0001 C CNN "Voltage"
-F 8 "+/- 5%" H 5550 5300 60  0001 C CNN "Tolerance"
-F 9 "NPO" H 5550 5200 60  0001 C CNN "Dielectric"
-F 10 "-55C / +125C" H 5550 5100 60  0001 C CNN "Temp Range"
-	1    5550 6050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2450 5950 2600 5950
 Wire Wire Line
@@ -1149,24 +1113,6 @@ Wire Wire Line
 	5900 4600 5900 5850
 Wire Wire Line
 	5550 5850 6000 5850
-$Comp
-L 04025A100JAT2A C11
-U 1 1 56C9CBD1
-P 7050 6050
-F 0 "C11" V 7000 5750 60  0000 C CNN
-F 1 "04025A100JAT2A" H 7150 5500 60  0001 C CNN
-F 2 "Standard_Footprints:C0402" H 7100 5800 60  0001 C CNN
-F 3 "C:/Users/Chris/VendorData/AVX/C0GNP0-Dielectric.pdf" H 7100 5000 60  0001 C CNN
-F 4 "AVX" H 7100 5700 60  0001 C CNN "mfg"
-F 5 "04025A100JAT2A" H 7150 5600 60  0001 C CNN "mfg part number"
-F 6 "10pF" V 7100 5800 60  0000 C CNN "Capacatance"
-F 7 "50V" H 7050 5400 60  0001 C CNN "Voltage"
-F 8 "+/- 5%" H 7050 5300 60  0001 C CNN "Tolerance"
-F 9 "NPO" H 7050 5200 60  0001 C CNN "Dielectric"
-F 10 "-55C / +125C" H 7050 5100 60  0001 C CNN "Temp Range"
-	1    7050 6050
-	0    -1   1    0   
-$EndComp
 $Comp
 L GND #PWR023
 U 1 1 56C9CC62
@@ -1258,7 +1204,7 @@ F 5 "SN74LV1T34DBVR" H 3350 6600 60  0001 C CNN "mfg part number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 7600 3400 7500
+	3400 7500 3400 7600
 Wire Wire Line
 	3400 6800 3400 6700
 Wire Wire Line
@@ -1344,5 +1290,121 @@ F 4 "FCI" H 1300 3150 60  0001 C CNN "mfg"
 F 5 "10118193-0001LF" H 1300 3050 60  0001 C CNN "mfg part number"
 	1    1250 3600
 	1    0    0    -1  
+$EndComp
+$Comp
+L C1005X7R1H104K050BB C15
+U 1 1 56CFE654
+P 2850 4950
+F 0 "C15" V 2650 4750 60  0000 C CNN
+F 1 "C1005X7R1H104K050BB" H 2950 4400 60  0001 C CNN
+F 2 "Standard_Footprints:C0402" H 2900 4700 60  0001 C CNN
+F 3 "" H 2850 4800 60  0000 C CNN
+F 4 "TDK" H 2900 4600 60  0001 C CNN "mfg"
+F 5 "C1005X7R1H104K050BB" H 2950 4500 60  0001 C CNN "mfg part number"
+F 6 "0.1uF" V 2750 4800 60  0000 C CNN "Capacatance"
+F 7 "50V" H 2850 4300 60  0001 C CNN "Voltage"
+F 8 "+/- 10%" H 2850 4200 60  0001 C CNN "Tolerance"
+F 9 "X7R" H 2850 4100 60  0001 C CNN "Dielectric"
+F 10 "-55C / +125C" H 2850 4000 60  0001 C CNN "Temp Range"
+	1    2850 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 4650 3250 4650
+Wire Wire Line
+	2850 4800 2850 4650
+Connection ~ 2850 4650
+$Comp
+L GND #PWR026
+U 1 1 56CFF306
+P 2850 5150
+F 0 "#PWR026" H 2850 4900 50  0001 C CNN
+F 1 "GND" H 2850 5000 50  0000 C CNN
+F 2 "" H 2850 5150 50  0000 C CNN
+F 3 "" H 2850 5150 50  0000 C CNN
+	1    2850 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 5100 2850 5150
+$Comp
+L 5019 J3
+U 1 1 56CFFE62
+P 5500 7150
+F 0 "J3" V 5700 7150 60  0000 C CNN
+F 1 "5019" V 5800 7150 60  0000 C CNN
+F 2 "Keystone_Electronics_Footprints:5090" H 5550 6650 60  0001 C CNN
+F 3 "" H 5500 6700 60  0000 C CNN
+F 4 "Keystone Electronics" H 5500 6850 60  0001 C CNN "mfg"
+F 5 "5019" H 5500 6750 60  0001 C CNN "mfg part number"
+	1    5500 7150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 56D0041B
+P 5500 7250
+F 0 "#PWR027" H 5500 7000 50  0001 C CNN
+F 1 "GND" H 5500 7100 50  0000 C CNN
+F 2 "" H 5500 7250 50  0000 C CNN
+F 3 "" H 5500 7250 50  0000 C CNN
+	1    5500 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 7200 5500 7250
+$Comp
+L ABM8G-12.000MHZ-18-D2Y-T X1
+U 1 1 56D01C0D
+P 6250 6050
+F 0 "X1" V 5950 6150 60  0000 C CNN
+F 1 "ABM8G-12.000MHZ-18-D2Y-T" H 7200 5350 60  0001 C CNN
+F 2 "Abracon_Footprints:ABM8G" H 7150 5450 60  0001 C CNN
+F 3 "C:/Users/Chris/VendorData/Abracon/ABM8G.pdf" H 7700 5250 60  0001 C CNN
+F 4 "Abracon" H 6700 6250 60  0001 C CNN "mfg"
+F 5 "ABM8G-12.000MHZ-18-D2Y-T" H 7200 5950 60  0001 C CNN "mfg number"
+F 6 "18pF" H 6650 5850 60  0001 C CNN "Load Capacatance"
+F 7 "150 Ohm" H 6750 5750 60  0001 C CNN "ESR"
+F 8 "+/- 30ppm" H 6800 5650 60  0001 C CNN "Frequency Stability"
+F 9 "+/- 20ppm" H 6800 5550 60  0001 C CNN "Frequency Tolerance"
+F 10 "12MHz" V 5850 6050 60  0000 C CNN "Frequency"
+	1    6250 6050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 04025A180JAT2A C11
+U 1 1 56D0209D
+P 7050 6050
+F 0 "C11" V 6950 6250 60  0000 C CNN
+F 1 "04025A180JAT2A" H 7150 5500 60  0001 C CNN
+F 2 "Standard_Footprints:C0402" H 7100 5800 60  0001 C CNN
+F 3 "C:/Users/Chris/VendorData/AVX/C0GNP0-Dielectric.pdf" H 7100 5000 60  0001 C CNN
+F 4 "AVX" H 7100 5700 60  0001 C CNN "mfg"
+F 5 "04025A180JAT2A" H 7150 5600 60  0001 C CNN "mfg part number"
+F 6 "18pF" V 7050 6300 60  0000 C CNN "Capacatance"
+F 7 "50V" H 7050 5400 60  0001 C CNN "Voltage"
+F 8 "+/- 5%" H 7050 5300 60  0001 C CNN "Tolerance"
+F 9 "NPO" H 7050 5200 60  0001 C CNN "Dielectric"
+F 10 "-55C / +125C" H 7050 5100 60  0001 C CNN "Temp Range"
+	1    7050 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L 04025A180JAT2A C5
+U 1 1 56D0257B
+P 5550 6050
+F 0 "C5" V 5450 5750 60  0000 C CNN
+F 1 "04025A180JAT2A" H 5650 5500 60  0001 C CNN
+F 2 "Standard_Footprints:C0402" H 5600 5800 60  0001 C CNN
+F 3 "C:/Users/Chris/VendorData/AVX/C0GNP0-Dielectric.pdf" H 5600 5000 60  0001 C CNN
+F 4 "AVX" H 5600 5700 60  0001 C CNN "mfg"
+F 5 "04025A180JAT2A" H 5650 5600 60  0001 C CNN "mfg part number"
+F 6 "18pF" V 5550 5800 60  0000 C CNN "Capacatance"
+F 7 "50V" H 5550 5400 60  0001 C CNN "Voltage"
+F 8 "+/- 5%" H 5550 5300 60  0001 C CNN "Tolerance"
+F 9 "NPO" H 5550 5200 60  0001 C CNN "Dielectric"
+F 10 "-55C / +125C" H 5550 5100 60  0001 C CNN "Temp Range"
+	1    5550 6050
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
