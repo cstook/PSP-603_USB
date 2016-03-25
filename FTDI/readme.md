@@ -1,0 +1,1 @@
+Install configuration file with [FT Prog](http://www.ftdichip.com/Support/Utilities.htm#FT_PROG)
