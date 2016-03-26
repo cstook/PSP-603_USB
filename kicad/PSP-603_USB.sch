@@ -63,18 +63,16 @@ $EndComp
 $Comp
 L GND #PWR01
 U 1 1 56C7C162
-P 1400 4350
-F 0 "#PWR01" H 1400 4100 50  0001 C CNN
-F 1 "GND" H 1400 4200 50  0000 C CNN
-F 2 "" H 1400 4350 50  0000 C CNN
-F 3 "" H 1400 4350 50  0000 C CNN
-	1    1400 4350
+P 1550 4250
+F 0 "#PWR01" H 1550 4000 50  0001 C CNN
+F 1 "GND" H 1550 4100 50  0000 C CNN
+F 2 "" H 1550 4250 50  0000 C CNN
+F 3 "" H 1550 4250 50  0000 C CNN
+	1    1550 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1150 3950 1150 4150
-Wire Wire Line
-	1150 4150 2750 4150
 Wire Wire Line
 	1200 4150 1200 3950
 Wire Wire Line
@@ -86,12 +84,9 @@ Connection ~ 1250 4150
 Wire Wire Line
 	1350 4150 1350 3950
 Connection ~ 1300 4150
-Wire Wire Line
-	1400 3950 1400 4350
 Connection ~ 1350 4150
-Connection ~ 1400 4150
 Wire Wire Line
-	1550 4150 1550 3800
+	1550 3800 1550 4250
 $Comp
 L PGB1010603MR CR2
 U 1 1 56C7C75A
@@ -112,7 +107,6 @@ Wire Wire Line
 Connection ~ 2350 3600
 Wire Wire Line
 	2350 4150 2350 4050
-Connection ~ 1550 4150
 Connection ~ 2350 4150
 Wire Wire Line
 	1550 3500 5100 3500
@@ -228,8 +222,6 @@ F 5 "9575" H 3600 5350 60  0001 C CNN "mfg part number"
 	1    3600 5800
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 3300 5950
-NoConn ~ 3600 5950
 $Comp
 L 10118193-0001LF J1
 U 1 1 56CE96CD
@@ -490,18 +482,18 @@ Wire Wire Line
 Wire Wire Line
 	6750 4500 6900 4500
 Wire Wire Line
-	7200 4300 7650 4300
+	7200 4300 7950 4300
 Wire Wire Line
-	7200 4500 7650 4500
+	7200 4500 7950 4500
 Wire Wire Line
-	8150 4500 8250 4500
+	8450 4500 8550 4500
 Wire Wire Line
-	8150 4300 8450 4300
-Text Label 8250 4300 0    60   ~ 0
+	8450 4300 8750 4300
+Text Label 8550 4300 0    60   ~ 0
 VBUS
 Wire Wire Line
-	8250 4500 8250 4300
-Connection ~ 8250 4300
+	8550 4500 8550 4300
+Connection ~ 8550 4300
 Wire Wire Line
 	6300 3100 7500 3100
 Wire Wire Line
@@ -565,35 +557,85 @@ Connection ~ 4700 4600
 $Comp
 L CRCW0805453RFKEA R1
 U 1 1 56F64E6A
-P 7900 4300
-F 0 "R1" H 8050 4400 60  0000 C CNN
-F 1 "CRCW0805453RFKEA" H 8000 3900 60  0001 C CNN
-F 2 "Standard_Footprints:R0805" H 8000 3800 60  0001 C CNN
-F 3 "C:/Users/Chris/VendorData/Vishay/dcrcwe3.pdf" H 8050 3500 60  0001 C CNN
-F 4 " 453 " H 7800 4400 60  0000 C CNN "Resistance"
-F 5 "Vishay" H 7900 3700 60  0001 C CNN "mfg"
-F 6 "CRCW0805453RFKEA" H 8050 4000 60  0001 C CNN "mfg part number"
-F 7 "1%" H 7750 4100 60  0001 C CNN "Tolerance"
-F 8 "0.125W" H 8000 4100 60  0001 C CNN "Power"
-F 9 "Thick Film" H 7900 3600 60  0001 C CNN "Composition"
-	1    7900 4300
+P 8200 4300
+F 0 "R1" H 8350 4400 60  0000 C CNN
+F 1 "CRCW0805453RFKEA" H 8300 3900 60  0001 C CNN
+F 2 "Standard_Footprints:R0805" H 8300 3800 60  0001 C CNN
+F 3 "C:/Users/Chris/VendorData/Vishay/dcrcwe3.pdf" H 8350 3500 60  0001 C CNN
+F 4 " 453 " H 8100 4400 60  0000 C CNN "Resistance"
+F 5 "Vishay" H 8200 3700 60  0001 C CNN "mfg"
+F 6 "CRCW0805453RFKEA" H 8350 4000 60  0001 C CNN "mfg part number"
+F 7 "1%" H 8050 4100 60  0001 C CNN "Tolerance"
+F 8 "0.125W" H 8300 4100 60  0001 C CNN "Power"
+F 9 "Thick Film" H 8200 3600 60  0001 C CNN "Composition"
+	1    8200 4300
 	1    0    0    -1  
 $EndComp
 $Comp
 L CRCW0805453RFKEA R2
 U 1 1 56F6517F
-P 7900 4500
-F 0 "R2" H 8050 4350 60  0000 C CNN
-F 1 "CRCW0805453RFKEA" H 8000 4100 60  0001 C CNN
-F 2 "Standard_Footprints:R0805" H 8000 4000 60  0001 C CNN
-F 3 "C:/Users/Chris/VendorData/Vishay/dcrcwe3.pdf" H 8050 3700 60  0001 C CNN
-F 4 " 453 " H 7800 4350 60  0000 C CNN "Resistance"
-F 5 "Vishay" H 7900 3900 60  0001 C CNN "mfg"
-F 6 "CRCW0805453RFKEA" H 8050 4200 60  0001 C CNN "mfg part number"
-F 7 "1%" H 7750 4300 60  0001 C CNN "Tolerance"
-F 8 "0.125W" H 8000 4300 60  0001 C CNN "Power"
-F 9 "Thick Film" H 7900 3800 60  0001 C CNN "Composition"
-	1    7900 4500
+P 8200 4500
+F 0 "R2" H 8350 4350 60  0000 C CNN
+F 1 "CRCW0805453RFKEA" H 8300 4100 60  0001 C CNN
+F 2 "Standard_Footprints:R0805" H 8300 4000 60  0001 C CNN
+F 3 "C:/Users/Chris/VendorData/Vishay/dcrcwe3.pdf" H 8350 3700 60  0001 C CNN
+F 4 " 453 " H 8100 4350 60  0000 C CNN "Resistance"
+F 5 "Vishay" H 8200 3900 60  0001 C CNN "mfg"
+F 6 "CRCW0805453RFKEA" H 8350 4200 60  0001 C CNN "mfg part number"
+F 7 "1%" H 8050 4300 60  0001 C CNN "Tolerance"
+F 8 "0.125W" H 8300 4300 60  0001 C CNN "Power"
+F 9 "Thick Film" H 8200 3800 60  0001 C CNN "Composition"
+	1    8200 4500
 	1    0    0    -1  
 $EndComp
+$Comp
+L GND #PWR013
+U 1 1 56F6A57A
+P 3600 6050
+F 0 "#PWR013" H 3600 5800 50  0001 C CNN
+F 1 "GND" H 3600 5900 50  0000 C CNN
+F 2 "" H 3600 6050 50  0000 C CNN
+F 3 "" H 3600 6050 50  0000 C CNN
+	1    3600 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 56F6A5B8
+P 3300 6050
+F 0 "#PWR014" H 3300 5800 50  0001 C CNN
+F 1 "GND" H 3300 5900 50  0000 C CNN
+F 2 "" H 3300 6050 50  0000 C CNN
+F 3 "" H 3300 6050 50  0000 C CNN
+	1    3300 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 5950 3600 6050
+Wire Wire Line
+	3300 5950 3300 6050
+Wire Wire Line
+	1400 3950 1400 4350
+Wire Wire Line
+	1150 4150 1400 4150
+Wire Wire Line
+	1550 4150 2750 4150
+Connection ~ 1550 4150
+Text Label 2100 3150 1    60   ~ 0
++5v
+Text Label 1600 3500 0    60   ~ 0
+D-
+Text Label 1600 3600 0    60   ~ 0
+D+
+Wire Wire Line
+	1400 4350 750  4350
+Connection ~ 1400 4150
+Text Label 750  4350 0    60   ~ 0
+Shield
+Text Label 4750 4600 0    60   ~ 0
+3r3v
+Text Label 7250 4300 0    60   ~ 0
+TXLEDANNODE
+Text Label 7250 4500 0    60   ~ 0
+RXLEDANNODE
 $EndSCHEMATC
