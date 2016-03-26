@@ -1,4 +1,4 @@
-update=2/24/2016 7:35:49 PM
+update=3/25/2016 9:23:09 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -45,3 +45,4 @@ LibName13=TE Connectivity/TE_Connectivity_Library
 LibName14=TI/TI_Library
 LibName15=FTDI/FTDI_Library
 LibName16=Keystone Electronics/Keystone_Electronics_Library
+LibName17=Vishay/Vishay_CRCW0805_Library
