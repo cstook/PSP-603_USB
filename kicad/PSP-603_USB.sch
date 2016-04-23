@@ -368,7 +368,7 @@ $EndComp
 Wire Wire Line
 	5400 5050 5400 5150
 Wire Wire Line
-	5400 5150 5700 5150
+	5400 5150 5800 5150
 Wire Wire Line
 	5700 5150 5700 5050
 Wire Wire Line
@@ -541,7 +541,6 @@ NoConn ~ 6300 4150
 NoConn ~ 6300 4600
 NoConn ~ 6300 4750
 NoConn ~ 6300 4900
-NoConn ~ 5800 5050
 $Comp
 L PWR_FLAG #FLG012
 U 1 1 56F645C9
@@ -638,4 +637,7 @@ Text Label 7250 4300 0    60   ~ 0
 TXLEDANNODE
 Text Label 7250 4500 0    60   ~ 0
 RXLEDANNODE
+Wire Wire Line
+	5800 5150 5800 5050
+Connection ~ 5700 5150
 $EndSCHEMATC
