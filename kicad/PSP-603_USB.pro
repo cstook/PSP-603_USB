@@ -1,4 +1,4 @@
-update=3/25/2016 9:23:09 PM
+update=4/22/2016 10:04:00 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -46,3 +46,13 @@ LibName14=TI/TI_Library
 LibName15=FTDI/FTDI_Library
 LibName16=Keystone Electronics/Keystone_Electronics_Library
 LibName17=Vishay/Vishay_CRCW0805_Library
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
