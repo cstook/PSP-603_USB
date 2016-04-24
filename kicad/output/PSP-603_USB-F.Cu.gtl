@@ -1,7 +1,7 @@
 G04 #@! TF.FileFunction,Copper,L1,Top,Signal*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 4.0.1-stable) date 4/22/2016 10:57:25 PM*
+G04 Created by KiCad (PCBNEW 4.0.1-stable) date 4/23/2016 10:29:46 PM*
 %MOMM*%
 G01*
 G04 APERTURE LIST*

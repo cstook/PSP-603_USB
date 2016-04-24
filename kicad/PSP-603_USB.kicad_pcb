@@ -2,8 +2,8 @@
 
   (general
     (links 42)
-    (no_connects 1)
-    (area 128.450399 92.634999 162.635001 125.805001)
+    (no_connects 0)
+    (area 124.4942 92.609999 162.635001 129.5454)
     (thickness 1.6)
     (drawings 15)
     (tracks 172)
@@ -640,7 +640,7 @@
   (gr_text "4 GND\n3 Rx\n2 Tx\n1 +5V" (at 153.8 98.35) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
-  (gr_text "PSP-603 USB\n3/26/2016" (at 153.4 118.6) (layer B.SilkS)
+  (gr_text "PSP-603 USB\n4/23/2016" (at 153.4 118.6) (layer B.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
   (gr_line (start 146.05 100.33) (end 146.05 92.71) (angle 90) (layer Cmts.User) (width 0.2))
